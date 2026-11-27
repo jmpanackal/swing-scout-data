@@ -1,0 +1,21 @@
+# Tickers the daily job always covers in full (charts, option chains, earnings dates).
+# The S&P 500 + Nasdaq-100 are added automatically for the market-wide scan.
+watchlist: [ANT, AMD, NVDA, GOOGL, AMZN, NFLX, SKHY, DUOL, META, NBIS, UBER, COST, WMT, DIS, DVN, SOFI, GBTC, ETHE, GLD, CLSK]
+holdings: []   # kept out of this public repo on purpose; positions live in the private skill
+frontier: [IONQ, RGTI, QBTS, QNT, OKLO, SMR, RKLB, ASTS]
+
+# Large companies outside the S&P 500 to include in the market-wide scan
+# (Nasdaq-100 extras + big foreign companies listed in the US). Edit freely; bad tickers are just skipped.
+extra_universe: [ASML, ARM, AZN, PDD, MELI, SHOP, TEAM, CCEP, GFS, TRI, ZS, MSTR, MDB,
+                 TSM, NVO, SAP, BABA, SONY, TM, UL, SHEL, BP, RIO, BHP, NU, SE, SPOT, RACE,
+                 HSBC, TD, RY, NVS, SNY, GSK, DEO, BTI, ABBV, INFY, IBN, HDB, CNI, CP, ENB, BAM, BN]
+
+# Market regime and sector sweep
+market: [SPY, QQQ, IWM, "^VIX"]
+sector_etfs: [XLK, XLC, XLY, XLP, XLE, XLF, XLV, XLI, XLB, XLU, XLRE]
+industry_etfs: [SMH, XBI, ITA, KRE, XHB, IGV, ARKK, QTUM, URA, UFO]
+
+# Option chains: expirations to keep
+option_dte_windows: [[21, 50], [250, 450]]   # swing window + one LEAPS
+option_strike_band: 0.25                       # keep strikes within +/-25% of spot
+ohlcv_keep_rows: 300
