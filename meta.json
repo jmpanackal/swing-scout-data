@@ -1,0 +1,17 @@
+{
+ "built_utc": "2026-11-28T04:44:10+00:00",
+ "data_asof": "2026-11-27",
+ "tickers_requested": 594,
+ "tickers_ok": 594,
+ "missing": [],
+ "option_failures": [],
+ "files": [
+  "snapshot.csv",
+  "setups.csv",
+  "market.json",
+  "earnings.csv",
+  "universe.csv",
+  "ohlcv/<T>.csv",
+  "options/<T>.csv + options_meta.json + iv_history.csv + iv_rank.csv (from the intraday options job)"
+ ]
+}
